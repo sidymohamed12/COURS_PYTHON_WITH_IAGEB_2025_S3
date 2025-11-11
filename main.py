@@ -7,7 +7,7 @@
 
 fruits = [
             "pomme", "banana", "orange", 
-            ["kiwi", "ananas"]
+            # ["kiwi", "ananas"]
         ]
 
 # CRUD -> create, read, update, delete
@@ -60,9 +60,9 @@ plats = [
 #  pour plats :
 
 # plats = [
-    # 0 -> ["Thiebou Dieune", 5, 1200, ["huile", "riz", "poisson"], 1 ]
-    # 1 -> ["mafe", 3, 1000, ["huile" , "viande", "arachide"], 1]
-    # 2 -> ["yassa boulette", 10, 950, ["oignon ","riz","bissap"], 1]
+    # 0 -> ["Thiebou Dieune", 5, 1200, ["huile", "riz", "poisson"], 1 ],
+    # 1 -> ["mafe", 3, 1000, ["huile" , "viande", "arachide"], 1],
+    # 2 -> ["yassa boulette", 10, 950, ["oignon ","riz","bissap"], 1],
     # 3 -> ["yassa" , 10 , 50 , [ "Riz" , "viande", "oignons" ],1]
 # ]
 
@@ -146,11 +146,11 @@ def ajout_plat():
         ok = input("voulez-vous ajouter des ingredients ? (o/n) : ")
     
     # avec append
-    plat_a_ajouter.append(nom)
-    plat_a_ajouter.append(quantite)
-    plat_a_ajouter.append(prix)
-    plat_a_ajouter.append(ings)
-    plat_a_ajouter.append(disponibilite)
+    # plat_a_ajouter.append(nom)
+    # plat_a_ajouter.append(quantite)
+    # plat_a_ajouter.append(prix)
+    # plat_a_ajouter.append(ings)
+    # plat_a_ajouter.append(disponibilite)
     
     # avec extend
     plat_a_ajouter.extend([nom, quantite, prix, ings, disponibilite])
@@ -161,8 +161,8 @@ def ajout_plat():
     
     afficher_plat(plats)
     
-# print("------------- avant insertion -------------")
-# afficher_plat(plats)
-# print("--------------------------------------- \n")
+print("------------- avant insertion -------------")
+afficher_plat(plats)
+print("--------------------------------------- \n")
 
-# ajout_plat()
+ajout_plat()
